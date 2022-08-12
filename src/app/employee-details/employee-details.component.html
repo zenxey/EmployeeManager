@@ -1,0 +1,26 @@
+<table class="table table-bordered table-dark">
+    <thead>
+        <tr>
+            <th scope="col">name</th>
+            <th scope="col">company</th>
+            <th scope="col">designation</th>
+            <th scope="col">company_logo</th>
+            <th scope="col">interests</th>
+            <th scope="col">job_description</th>
+            <th scope="col">rating</th>
+            <th scope="col">view_more</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let record of this.userListDetails; index as i;">
+            <td>{{record.name}}</td>
+            <td>{{record.company}}</td>
+            <td>{{record.designation}}</td>
+            <td>{{record.company_logo}}</td>
+            <td>{{record.interests}}</td>
+            <td>{{record.job_descripton}}</td>
+            <td>{{record.rating}}</td>
+            <td> <a href="{{record.view_more}}" (click)="record.view_more">{{record.view_more}}</a></td>
+        </tr>
+    </tbody>
+</table>

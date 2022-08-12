@@ -1,0 +1,18 @@
+<table class="table table-bordered table-dark">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>company</th>
+            <th>designation</th>
+            <th>company_logo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let record of this.usersList; index as i;">
+            <td> <a href="" (click)="goToDetails(record)">{{record.name}}</a></td>
+            <td>{{record.company}}</td>
+            <td>{{record.designation}}</td>
+            <td>{{record.company_logo}}</td>
+        </tr>
+    </tbody>
+</table>
